@@ -2,13 +2,13 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: SourceSansPro;
+      font-family: 'Source Sans Pro', sans-serif;
 }
 body {
   background-color: #cad3d3;
 }
 .container {
-  width: 90%;
+  max-width:1200px ;
   margin: 100px auto;
   display: flex;
   justify-content: space-between;
@@ -36,24 +36,37 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 5654654;
   top: -60px;
   left: 120px;
 }
 .card--header__text > h1{
   color: #ffffff;
-  font-size: 32px;
+  font-size: 36px;
   letter-spacing: 3px;
+  font-weight: 100;
+  position: relative;
+  z-index: 51351351351;
+  font-family: system-ui;
+}
+.header-after::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 22222;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 
 .card--body {
   text-align: center;
-  margin-top: 25px;
   margin-bottom: 52px;
+  margin-top: 25px;
 }
 .card-text{
   line-height: 50px;
-  color:  #5f727f;
+  color: #5f727f;
 }
 .card--header--text{
   font-size: 12pt;
@@ -62,9 +75,16 @@ body {
   color: #2196f7;
   text-align: center;
 }
+.card--body__title > h3 {
+    font-size: 24px;
+}
 
 .card--body--list .card-text:nth-child(odd) {
   background-color: #f4f6f7;  
+}
+.card--body__title > p {
+    color: #99a9b5;
+    font-size: 14px;
 }
 
 .height-groups{
@@ -74,6 +94,8 @@ body {
   width: 170px;
   margin-top: 50px;
   font-size: 16pt;
+  font-family: system-ui;
+  font-weight: 300;
 }
 .btn:hover {
   cursor: pointer;
@@ -89,12 +111,15 @@ body {
 
 .usd{
   font-size: 32px;
-
+  font-family: system-ui;
+  font-weight: 100;
 }
 .price{
-  font-size: 16px;
+  font-size: 13px;
+  margin-top: 5px;
   text-align: center;
   color: #afbfc3;
+  font-family: system-ui;
 }
 .cl-success{
   color: #32ad1e;
@@ -105,7 +130,9 @@ body {
 */
 .card--body__title , h3 {
   margin-bottom: 20px;
-  color: #5f727f;
+  color: #748590;
+  font-family: system-ui;
+  font-weight: 400;
 }
 /* .card--body__title > h3 {
   margin-bottom: 20px;
@@ -113,8 +140,8 @@ body {
 
 .bg-ocean {
   background-image: url('./images/ocean.png');
-  background-size: 100%;
   background-repeat: no-repeat;
+  /* background-position: bottom; */
 }
 .btn-primary {
   color: #2196f7;
@@ -132,17 +159,12 @@ body {
 .bg-ocean-cl {
   background: #ffffff;
 }
-
-
-
-
 /*
   css mountains
 */
 
 .bg-mountains {
   background-image: url('./images/mountain.png');
-  background-size: 100%;
   background-repeat: no-repeat;
 }
 .bg-mountains::after{
@@ -150,8 +172,9 @@ body {
   color: #ffffff;
   position: absolute;
   top: 3%;
-  left: 2%;
+  left: 1%;
   z-index: 5565656;
+  font-weight: 600;
 }
 .btn-purple {
   background: #ffffff;
@@ -185,7 +208,6 @@ body {
 
  .bg-forest{
    background-image: url('./images/forest.png');
-   background-size: 100%;
    background-repeat: no-repeat;
  }
  .btn-success {
@@ -244,8 +266,6 @@ body {
     left: 0%;
   }
 }
-
-
 @media all and (min-width: 992px) and (max-width: 1200px) {
   .container{
     width: 100%;
