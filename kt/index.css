@@ -1,0 +1,290 @@
+
+*{
+  margin: 0;
+  padding: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+  background-color: #cad3d3;
+}
+.container {
+  max-width:1200px ;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  background-color: #ffffff;
+}
+
+.card--header {
+  width: 362px;
+  height: 272px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--header--text {
+  background: red;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 5654654;
+  top: -60px;
+  left: 120px;
+}
+.card--header__text > h1{
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  position: relative;
+  z-index: 51351351351;
+  font-family: system-ui;
+}
+.header-after::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 22222;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+.card--body {
+  text-align: center;
+  margin-bottom: 52px;
+  margin-top: 25px;
+}
+.card-text{
+  line-height: 50px;
+  color: #5f727f;
+}
+.card--header--text{
+  font-size: 12pt;
+}
+.card--header--text > div {
+  color: #2196f7;
+  text-align: center;
+}
+.card--body__title > h3 {
+    font-size: 24px;
+}
+
+.card--body--list .card-text:nth-child(odd) {
+  background-color: #f4f6f7;  
+}
+.card--body__title > p {
+    color: #99a9b5;
+    font-size: 14px;
+}
+
+.height-groups{
+  height: 50px;
+}
+.btn {
+  width: 170px;
+  margin-top: 50px;
+  font-size: 16pt;
+  font-family: system-ui;
+  font-weight: 300;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.per-cl {
+  color: #92a1ad;
+}
+
+.per {
+  color: #adbac4 !important;
+}
+
+.usd{
+  font-size: 32px;
+  font-family: system-ui;
+  font-weight: 100;
+}
+.price{
+  font-size: 13px;
+  margin-top: 5px;
+  text-align: center;
+  color: #afbfc3;
+  font-family: system-ui;
+}
+.cl-success{
+  color: #32ad1e;
+}
+
+/* 
+ css ocean
+*/
+.card--body__title , h3 {
+  margin-bottom: 20px;
+  color: #748590;
+  font-family: system-ui;
+  font-weight: 400;
+}
+/* .card--body__title > h3 {
+  margin-bottom: 20px;
+} */
+
+.bg-ocean {
+  background-image: url('./images/ocean.png');
+  background-repeat: no-repeat;
+  /* background-position: bottom; */
+}
+.btn-primary {
+  color: #2196f7;
+  border:1px solid #2196f7 ;
+  background: #ffffff;
+}
+.btn-primary:hover{
+  background-color:#2196f7 ;
+  color: #ffffff;
+  transition: 2s;
+}
+.btn-primary:focus{
+  outline: none;
+}
+.bg-ocean-cl {
+  background: #ffffff;
+}
+/*
+  css mountains
+*/
+
+.bg-mountains {
+  background-image: url('./images/mountain.png');
+  background-repeat: no-repeat;
+}
+.bg-mountains::after{
+  content: 'NEW';
+  color: #ffffff;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  z-index: 5565656;
+  font-weight: 600;
+}
+.btn-purple {
+  background: #ffffff;
+  color: #6c136f;
+  border: 1px solid #6c136f;
+}
+.btn-purple:hover {
+  background-color: #6c136f;
+  color:#ffffff ;
+  border: 1px solid #6c136f;
+  transition: 2s;
+}
+.mountains-color > .usd {
+  color: #d74498 !important;
+}
+.bg-mountains-cl {
+  background-color: #2c2e3d;
+}
+
+.bg-mountains > img {
+  position: absolute;
+  top: -6%;
+  left: -3%;
+  z-index: 44;
+}
+
+
+/*
+  forest
+ */
+
+ .bg-forest{
+   background-image: url('./images/forest.png');
+   background-repeat: no-repeat;
+ }
+ .btn-success {
+   color: #32ad1e;
+   border: 1px solid #32ad1e;
+   background: #ffffff;
+ }
+ .btn-success:hover {
+  background: #32ad1e;
+  color: #ffffff;
+  transition: 2s;
+ }
+
+ /*
+  responsive
+ */
+
+ /*
+  0 -> 992px
+ */
+@media all and (min-width:0px) and (max-width: 992px) {
+  .container{
+    display: block;
+  }
+  .card {
+    padding-bottom: 50px ;
+  }
+  .card--header{
+    width: 100%;
+  }
+  .card--header--text{
+    left: auto;
+    border: 1px solid grey;
+  }
+}
+
+ /*
+  576px > 768px
+ */
+@media all and (min-width: 576px) and (max-width: 768px) {
+
+}
+
+  /*
+ 768px > 992px
+ */
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .bg-mountains > img {
+    position: absolute;
+    top: -4%;
+    left: -2%;
+    z-index: 44;
+  }
+  .bg-mountains::after{
+    top: 5%;
+    left: 0%;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .container{
+    width: 100%;
+  }
+
+}
+
+@media all and (min-width: 1000px) and (max-width: 1110px) {
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card {
+    margin-top: 75px;
+    width: 45%;
+  }
+  .card--header{
+    width: 100%;
+  }
+
+}
