@@ -141,6 +141,7 @@ body {
 .bg-ocean {
   background-image: url('./images/ocean.png');
   background-repeat: no-repeat;
+    background-size: cover;
   /* background-position: bottom; */
 }
 .btn-primary {
@@ -166,6 +167,7 @@ body {
 .bg-mountains {
   background-image: url('./images/mountain.png');
   background-repeat: no-repeat;
+    background-size: cover;
 }
 .bg-mountains::after{
   content: 'NEW';
@@ -209,6 +211,7 @@ body {
  .bg-forest{
    background-image: url('./images/forest.png');
    background-repeat: no-repeat;
+    background-size: cover;
  }
  .btn-success {
    color: #32ad1e;
